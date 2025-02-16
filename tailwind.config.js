@@ -25,6 +25,7 @@ export default {
         serif: ["Kumbh Sans", "serif"],
       },
     },
+    darkMode: "class",
     plugins: [],
   };
   

@@ -1,4 +1,3 @@
-import JobDetails from '../pages/jobDetails'
 import Home from '../pages/home'
 
 function App() {
@@ -6,7 +5,6 @@ function App() {
   return (
     <>
       <Home />
-      <JobDetails />
     </>
   )
 }
