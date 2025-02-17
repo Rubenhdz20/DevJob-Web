@@ -14,6 +14,7 @@ export default {
       colors: {
         'violet': '#9e7f66',
         'light-violet': '#939BF4',
+        'circle-violet': '#5964E0',
         'dark-blue': '#19202D',
         'midnight': '#121721',
         'white': '#FFFFFF',

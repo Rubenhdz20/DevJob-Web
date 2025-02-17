@@ -14,14 +14,24 @@ const NavBar: React.FC = () => {
 
     return (
         <nav 
-            className="h-full px-6 py-4 flex items-center justify-between rounded-bl-lg rounded-br-lg"
+            className="h-32 px-6 py-4 flex items-center justify-around rounded-bl-lg rounded-br-lg"
             style={{ backgroundImage: "url('src/assets/mobile/navbar-mobile-bg.svg')" }}
         >
-           <div>hello</div>
-           <div>hello</div>
-           <div>hello</div>
-           <div>hello</div>
-           <div>hello</div>
+          <h1 className="p-1.5 text-white text-2xl font-bold">devjobs</h1>
+          <div className="relative flex items-center justify-around gap-x-4">
+            <img src="src/assets/logos/sun.svg" alt="light mode" /> 
+            <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="w-12 h-6 bg-white rounded-full flex items-center p-1 transition-all duration-300"
+            >
+                <div
+                className={`w-4 h-4 bg-indigo-500 rounded-full transition-transform transform ${
+                    darkMode ? "translate-x-6" : "translate-x-0"
+                }`}
+                ></div>
+            </button>
+            <img src="src/assets/logos/moon.svg" alt="dark mode" /> 
+          </div>
         </nav>
     )
 }
